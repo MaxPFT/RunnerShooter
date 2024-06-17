@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LaunchPoint : MonoBehaviour
@@ -5,6 +6,9 @@ public class LaunchPoint : MonoBehaviour
     [SerializeField] private GameObject m_projectile;
     [SerializeField] private float m_projectileSpeed;
     [SerializeField] private float m_time;
+
+    [SerializeField] private Color[] m_color;
+
     private Vector3 m_mousePosition;
     private Vector2 m_dir;
     private float m_lookAngle;

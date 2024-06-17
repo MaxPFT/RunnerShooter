@@ -38,8 +38,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Movement()
     {
-        var _inputX = Input.GetAxis("Horizontal");
-        m_rb2D.velocity = new Vector2(_inputX * m_speed, m_rb2D.velocity.y);
+        transform.position = Vector3.right * m_speed * Time.deltaTime + transform.position;
     }
 
 

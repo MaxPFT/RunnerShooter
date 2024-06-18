@@ -33,6 +33,8 @@ public class LaunchPoint : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q)) 
         {
             m_index--;
+            if (m_index <0) m_index= m_color.Length - 1;
+            
             Debug.Log(m_color[m_index]);
         }
         if (Input.GetKeyDown(KeyCode.E))

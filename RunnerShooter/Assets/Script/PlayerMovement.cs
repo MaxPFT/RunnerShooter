@@ -10,8 +10,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform m_groundCheckTransform;
     [SerializeField] private LayerMask m_groundLayerMask;
     private bool m_isGrounded;
-    [Header("-- Movement --")]
-    [SerializeField] private float m_speed;
 
 
     // Start is called before the first frame update
@@ -26,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
         m_isGrounded = Physics2D.OverlapCircle(m_groundCheckTransform.position, m_checkGroundRadius, m_groundLayerMask);
 
         Jump();
-        Movement();
     }
 
     private void Jump()
@@ -36,10 +33,7 @@ public class PlayerMovement : MonoBehaviour
             m_rb2D.AddForce(new Vector2(m_rb2D.velocity.x, m_jump));
         }
     }
-    private void Movement()
-    {
-        transform.position = Vector3.right * m_speed * Time.deltaTime + transform.position;
-    }
+    
 
 
 }

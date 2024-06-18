@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8586653249665752283}
   - component: {fileID: 7123021475412007951}
   - component: {fileID: -6688767623132904916}
+  - component: {fileID: -1737310704526856618}
   m_Layer: 6
   m_Name: SmallGround
   m_TagString: Untagged
@@ -158,3 +159,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-1737310704526856618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008591486152883039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c078a2a11fc4a1a46a06bd1a1d304200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speed: 0

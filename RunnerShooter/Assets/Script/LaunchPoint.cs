@@ -12,6 +12,7 @@ public class LaunchPoint : MonoBehaviour
     private Vector3 m_mousePosition;
     private Vector2 m_dir;
     private float m_lookAngle;
+    private int m_index = 0;
 
 
     // Update is called once per frame
@@ -29,6 +30,19 @@ public class LaunchPoint : MonoBehaviour
             Shoot();
         }
 
+        if (Input.GetKeyDown(KeyCode.Q)) 
+        {
+            m_index--;
+            Debug.Log(m_color[m_index]);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            m_index = (m_index + 1) % m_color.Length;
+            Debug.Log(m_color[m_index]);
+        }
+
+        
+
     }
 
     private void Shoot()
@@ -37,6 +51,7 @@ public class LaunchPoint : MonoBehaviour
         _projectileClone.transform.position = transform.position;
         _projectileClone.transform.rotation = Quaternion.Euler(0, 0, m_lookAngle);
         _projectileClone.GetComponent<Rigidbody2D>().velocity = transform.up * m_projectileSpeed;
+        _projectileClone.GetComponent<SpriteRenderer>().color = m_color[m_index];
         Destroy(_projectileClone, m_time);
     }
 

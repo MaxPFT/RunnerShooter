@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 896289653}
   - component: {fileID: 896289652}
   - component: {fileID: 896289651}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ Transform:
   m_GameObject: {fileID: 896289650}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.2, y: -2.3, z: 0}
+  m_LocalPosition: {x: 55.2, y: -8.5, z: 0}
   m_LocalScale: {x: 1.4285713, y: 1.4285713, z: 1.4285713}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1051,8 +1051,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemy: {fileID: 7396161494968245693, guid: 1e4d4682328490f4a9732fd6950473f9, type: 3}
   m_timer: 0
-  m_minTimer: 4
-  m_maxTimer: 9
+  m_minTimer: 0
+  m_maxTimer: 1
   m_speed: 20
   m_color:
   - {r: 1, g: 0, b: 0, a: 1}

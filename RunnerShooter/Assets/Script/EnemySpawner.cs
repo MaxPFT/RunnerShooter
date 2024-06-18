@@ -13,12 +13,8 @@ public class EnemySpawner : MonoBehaviour
     [Header("-- Speed --")]
     [SerializeField] private float m_speed;
 
-    [SerializeField] private Color[] m_color;
-    private int m_index = 0;
-
-
-
-
+    public Color[] m_color;
+    private int m_indexColorEnemy = 0;
 
 
 
@@ -26,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         m_timer = Random.Range(m_minTimer, m_maxTimer);
-        m_index = Random.Range(0, 4);
+        m_indexColorEnemy = Random.Range(0, 4);
     }
 
     // Update is called once per frame
@@ -37,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
         {
             SpawnEnemy();
             m_timer = Random.Range(m_minTimer, m_maxTimer);
-            m_index = Random.Range(0, 4);
+            m_indexColorEnemy = Random.Range(0, 4);
 
         }
     }
@@ -46,6 +42,9 @@ public class EnemySpawner : MonoBehaviour
     {
         var item = Instantiate(m_enemy, new Vector3(transform.position.x, 15, 0), Quaternion.identity);
         item.GetComponent<EvironementMovement>().SetSpeed(m_speed);
-        item.GetComponent<SpriteRenderer>().color = m_color[m_index];
+        item.GetComponent<EnemyColor>().SetColorIndex(m_indexColorEnemy);
+        item.GetComponent<SpriteRenderer>().color = m_color[m_indexColorEnemy];
     }
+
+
 }

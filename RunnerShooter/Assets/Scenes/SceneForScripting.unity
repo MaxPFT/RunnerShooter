@@ -416,11 +416,11 @@ MonoBehaviour:
   - {fileID: 5008591486152883039, guid: 12ebfa46e2b7cb74cb4675a5bc8609d3, type: 3}
   - {fileID: 5008591486152883039, guid: 12ebfa46e2b7cb74cb4675a5bc8609d3, type: 3}
   - {fileID: 5008591486152883039, guid: 12ebfa46e2b7cb74cb4675a5bc8609d3, type: 3}
-  m_distanceBetweenNewGround: 10
+  m_distanceBetweenNewGround: 16
   m_timer: 0
-  m_maxTimer: 10
-  m_speed: 5
-  m_addSpeed: 0.1
+  m_maxTimer: 5
+  m_speed: 7
+  m_addSpeed: 0.2
 --- !u!50 &896289652
 Rigidbody2D:
   serializedVersion: 4
@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42dcaf8570fdc4f4d934189dc0ffc6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_jump: 500
+  m_jump: 350
   m_checkGroundRadius: 0.14
   m_groundCheckTransform: {fileID: 1070434881}
   m_groundLayerMask:

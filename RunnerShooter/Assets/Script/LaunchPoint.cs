@@ -8,8 +8,10 @@ public class LaunchPoint : MonoBehaviour
     [SerializeField] private float m_time;
 
     [SerializeField] private Color[] m_color;
+    [SerializeField] private Sprite[] m_weaponColor;
+    [SerializeField] private SpriteRenderer m_spriteRenderer;
 
-    private Vector3 m_mousePosition;
+    private Vector3 m_mousePosition; 
     private Vector2 m_dir;
     private float m_lookAngle;
     private int m_index = 0;
@@ -33,14 +35,18 @@ public class LaunchPoint : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q)) 
         {
             m_index--;
-            if (m_index <0) m_index= m_color.Length - 1;
-            
-            Debug.Log(m_color[m_index]);
+            if (m_index < 0) 
+            { 
+                m_index = m_color.Length - 1; 
+               
+            }
+            m_spriteRenderer.sprite = m_weaponColor[m_index];
+
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             m_index = (m_index + 1) % m_color.Length;
-            Debug.Log(m_color[m_index]);
+            m_spriteRenderer.sprite = m_weaponColor[m_index];
         }
 
         

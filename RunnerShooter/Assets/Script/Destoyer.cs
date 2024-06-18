@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GroundDestoyer : MonoBehaviour
+public class Destoyer : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,7 @@ public class GroundDestoyer : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == 6 || collision.gameObject.layer == 7)
         {
             Destroy(collision.gameObject);
         }

@@ -72,9 +72,10 @@ public class LaunchPoint : MonoBehaviour
         _projectileClone.GetComponent<SpriteRenderer>().color = m_color[m_indexProjectile];
         _projectileClone.GetComponent<ColorDetector>().color = m_indexProjectile;
         _projectileClone.GetComponent<ColorDetector>().ConnectToUiManager(m_uiManager);
+        Destroy(_projectileClone, m_time);
     }
-
     
+
 
 
 

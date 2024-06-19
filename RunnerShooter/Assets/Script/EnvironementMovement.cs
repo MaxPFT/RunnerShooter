@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EvironementMovement : MonoBehaviour
+public class EnvironementMovement : MonoBehaviour
 {
     [Header("-- Movement --")]
     [SerializeField] private float m_speed;

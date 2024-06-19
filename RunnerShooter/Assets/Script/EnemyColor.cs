@@ -1,18 +1,17 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 internal class EnemyColor : MonoBehaviour
 {
     public int m_indexColorEnemy;
-    internal void SetColorIndex(int _indexColorEnemy)
+    internal void SetColorIndexEnemy(int _indexColorEnemy)
     {
         m_indexColorEnemy = _indexColorEnemy;
     }
-
-    public int ColorIndexEnemy()
+    
+    public int ColorIndex()
     {
 
-    return m_indexColorEnemy; 
+        return m_indexColorEnemy;
     }
 
 }

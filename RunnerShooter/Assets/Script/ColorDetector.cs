@@ -19,13 +19,13 @@ public class ColorDetector : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 6 || collision.gameObject.layer == 7) 
+        if (collision.gameObject.layer == 3 || collision.gameObject.layer == 6 || collision.gameObject.layer == 7) 
         {
             return;
         }
 
-        var colorIndex = collision.GetComponent<EnemyColor>().ColorIndexEnemy();
-        if (color == colorIndex)
+        var _colorIndexEnemy = collision.GetComponent<EnemyColor>().ColorIndex();
+        if (color == _colorIndexEnemy)
         {
             Destroy(collision.gameObject);
         }

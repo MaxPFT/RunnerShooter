@@ -23,6 +23,7 @@ public class LaunchPoint : MonoBehaviour
     private Vector3 m_mousePosition; 
     private Vector2 m_dir;
     private float m_lookAngle;
+    [SerializeField] private UIGameManager m_uiManager;
 
 
     // Update is called once per frame
@@ -70,6 +71,7 @@ public class LaunchPoint : MonoBehaviour
         _projectileClone.GetComponent<Rigidbody2D>().velocity = transform.up * m_projectileSpeed;
         _projectileClone.GetComponent<SpriteRenderer>().color = m_color[m_indexProjectile];
         _projectileClone.GetComponent<ColorDetector>().color = m_indexProjectile;
+        _projectileClone.GetComponent<ColorDetector>().ConnectToUiManager(m_uiManager);
     }
 
     

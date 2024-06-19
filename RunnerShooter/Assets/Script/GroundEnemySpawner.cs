@@ -1,3 +1,4 @@
+using UnityEditor.U2D;
 using UnityEngine;
 
 public class GroundEnemySpawner : MonoBehaviour
@@ -5,6 +6,7 @@ public class GroundEnemySpawner : MonoBehaviour
     [Header("-- Spawner --")]
     [SerializeField] private GameObject m_groundEnemy;
     [SerializeField] private GameObject[] m_groundSpawnerEnemy;
+    [SerializeField] private Sprite[] m_spriteEnemy;
     private int m_randomSpawner;
 
     [Header("-- Color --")]
@@ -33,6 +35,7 @@ public class GroundEnemySpawner : MonoBehaviour
     private void SpawnGroundEnemy()
     {
         var item = Instantiate(m_groundEnemy, m_groundSpawnerEnemy[m_randomSpawner].transform.position, Quaternion.identity);
+        item.GetComponent<SpriteRenderer>().sprite = m_spriteEnemy[m_randomSpawner];
         item.transform.parent = transform;
         item.GetComponent<EnemyColor>().SetColorIndexEnemy(m_indexColorGroundEnemy);
         item.GetComponent<SpriteRenderer>().color = m_colorGroundEnemy[m_indexColorGroundEnemy];

@@ -3,18 +3,26 @@ using UnityEngine;
 
 public class LaunchPoint : MonoBehaviour
 {
+    [Header("-- Projectile --")]
     [SerializeField] private GameObject m_projectile;
     [SerializeField] private float m_projectileSpeed;
+    private int m_indexProjectile = 0;
+
+    [Header("-- Destruction --")]
     [SerializeField] private float m_time;
 
+    [Header("-- Weapon/Color --")]
+    [SerializeField] private float m_fireRate;
+    [SerializeField] private float m_nextFire;
     [SerializeField] private Color[] m_color;
     [SerializeField] private Sprite[] m_weaponColor;
     [SerializeField] private SpriteRenderer m_spriteRenderer;
 
+
+
     private Vector3 m_mousePosition; 
     private Vector2 m_dir;
     private float m_lookAngle;
-    private int m_indexProjectile = 0;
 
 
     // Update is called once per frame
@@ -27,8 +35,9 @@ public class LaunchPoint : MonoBehaviour
 
         transform.up = m_dir;
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >m_nextFire)
         {
+            m_nextFire = Time.time + m_fireRate;
             Shoot();
         }
 

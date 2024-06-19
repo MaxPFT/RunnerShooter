@@ -70,8 +70,9 @@ public class LaunchPoint : MonoBehaviour
         _projectileClone.GetComponent<Rigidbody2D>().velocity = transform.up * m_projectileSpeed;
         _projectileClone.GetComponent<SpriteRenderer>().color = m_color[m_indexProjectile];
         _projectileClone.GetComponent<ColorDetector>().color = m_indexProjectile;
-        Destroy(_projectileClone, m_time);
     }
+
+    
 
 
 

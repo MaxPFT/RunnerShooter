@@ -1059,6 +1059,51 @@ MonoBehaviour:
   - {r: 0, g: 1, b: 0, a: 1}
   - {r: 0, g: 0, b: 1, a: 1}
   - {r: 1, g: 1, b: 0, a: 1}
+--- !u!1 &1583409553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1583409555}
+  - component: {fileID: 1583409554}
+  m_Layer: 0
+  m_Name: UIGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1583409554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583409553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01eb4778a8c475c47b1919c906706257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimerText: {fileID: 220521478}
+--- !u!4 &1583409555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583409553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1317.1343, y: 574.0885, z: -0.24184883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1651371873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,6 +1273,8 @@ MonoBehaviour:
   m_projectile: {fileID: 1738060466414574880, guid: 7d80b81da8cc1d44d9476bdbab9e0eed, type: 3}
   m_projectileSpeed: 70
   m_time: 2
+  m_fireRate: 0.5
+  m_nextFire: 0
   m_color:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0, g: 1, b: 0, a: 1}
@@ -1251,7 +1298,6 @@ GameObject:
   - component: {fileID: 1830266306}
   - component: {fileID: 1830266305}
   - component: {fileID: 1830266304}
-  - component: {fileID: 1830266303}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1259,19 +1305,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1830266303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830266302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01eb4778a8c475c47b1919c906706257, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimerText: {fileID: 220521478}
 --- !u!114 &1830266304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,3 +1547,4 @@ SceneRoots:
   - {fileID: 1204330214}
   - {fileID: 1830266307}
   - {fileID: 1253532308}
+  - {fileID: 1583409555}

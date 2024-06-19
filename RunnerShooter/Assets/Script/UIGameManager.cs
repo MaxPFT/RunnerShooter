@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class Timer : MonoBehaviour
+public class UIGameManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI TimerText;
     private float ElapsedTime;

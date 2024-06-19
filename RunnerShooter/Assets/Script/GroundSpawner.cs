@@ -47,17 +47,17 @@ public class GroundSpawner : MonoBehaviour
 
         if (_randomNum == 1)
         {
-            var item = Instantiate(m_ground[0], new Vector3(transform.position.x + m_distanceBetweenNewGround, -6, 0), Quaternion.identity);
+            var item = Instantiate(m_ground[0], new Vector3(transform.position.x + m_distanceBetweenNewGround, -12, 0), Quaternion.identity);
             item.GetComponent<EnvironementMovement>().SetSpeed(m_speed);
         }
         if (_randomNum == 2)
         {
-            var item = Instantiate(m_ground[1], new Vector3(transform.position.x + m_distanceBetweenNewGround, -4, 0), Quaternion.identity);
+            var item = Instantiate(m_ground[1], new Vector3(transform.position.x + m_distanceBetweenNewGround, -10, 0), Quaternion.identity);
             item.GetComponent<EnvironementMovement>().SetSpeed(m_speed);
         }
         if (_randomNum == 3)
         {
-            var item = Instantiate(m_ground[2], new Vector3(transform.position.x + m_distanceBetweenNewGround, -2, 0), Quaternion.identity);
+            var item = Instantiate(m_ground[2], new Vector3(transform.position.x + m_distanceBetweenNewGround, -8, 0), Quaternion.identity);
             item.GetComponent<EnvironementMovement>().SetSpeed(m_speed);
         }
     }

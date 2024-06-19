@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -24,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
         m_isGrounded = Physics2D.OverlapCircle(m_groundCheckTransform.position, m_checkGroundRadius, m_groundLayerMask);
 
         Jump();
+
+        if (transform.position.y <= -20)
+        {
+            Time.timeScale = 0;
+            SceneManager.LoadScene(2);
+        }
     }
 
     private void Jump()

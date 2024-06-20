@@ -163,4 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 0
   m_killScore: 5
-  m_particulesEffect: {fileID: 6757685114697075779, guid: 24344a7c247326342b9f619f7334a037, type: 3}
+  m_particulesEffect: {fileID: 7395905164468411626, guid: d797682e482cf4145b1a7dd930be7b38, type: 3}

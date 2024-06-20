@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_timer: 0
   m_maxTimer: 5
   m_speed: 11
-  m_addSpeed: 0.3
+  m_addSpeed: 0.5
   m_listGameObject: []
 --- !u!50 &896289652
 Rigidbody2D:

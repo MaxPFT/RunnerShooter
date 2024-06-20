@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1738060466414574880}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8351209, y: -0.30242464, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.28, y: 0.28, z: 0.28}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -163,3 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 0
   m_killScore: 5
+  m_particulesEffect: {fileID: 6757685114697075779, guid: 24344a7c247326342b9f619f7334a037, type: 3}

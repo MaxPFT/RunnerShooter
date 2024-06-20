@@ -5,6 +5,7 @@ public class ColorDetector : MonoBehaviour
 {
     public int color;
     [SerializeField] private int m_killScore;
+    [SerializeField] private GameObject m_particulesEffect;
     private UIGameManager m_uiManager;
 
 
@@ -31,6 +32,7 @@ public class ColorDetector : MonoBehaviour
         if (color == _colorIndexEnemy)
         {
             m_uiManager.m_globalScore += m_killScore;
+            GameObject _particules = (GameObject)Instantiate(m_particulesEffect, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

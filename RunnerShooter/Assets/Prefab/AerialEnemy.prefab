@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5440662007669498225}
   - component: {fileID: 2398779048342803278}
   - component: {fileID: 5903812235239700416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AerialEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

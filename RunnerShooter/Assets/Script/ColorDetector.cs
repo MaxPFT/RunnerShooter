@@ -32,6 +32,7 @@ public class ColorDetector : MonoBehaviour
         {
             m_uiManager.m_globalScore += m_killScore;
             Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 

@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class AerialEnemySpawner : MonoBehaviour
 {
-    [Header("-- Spawner --")]
+    [Header("-- Spawner/Enemy --")]
     [SerializeField] private GameObject m_aerialEnemy;
+    [SerializeField] private Sprite[] m_spriteEnemy;
 
     [Header("-- Timer --")]
     [SerializeField] private float m_timer;
@@ -44,6 +45,8 @@ public class AerialEnemySpawner : MonoBehaviour
         item.GetComponent<EnvironementMovement>().SetSpeed(m_speed);
         item.GetComponent<EnemyColor>().SetColorIndexEnemy(m_indexColorAerialEnemy);
         item.GetComponent<SpriteRenderer>().color = m_colorAerialEnemy[m_indexColorAerialEnemy];
+        item.GetComponent<SpriteRenderer>().sprite = m_spriteEnemy[m_indexColorAerialEnemy];
+
     }
 
 

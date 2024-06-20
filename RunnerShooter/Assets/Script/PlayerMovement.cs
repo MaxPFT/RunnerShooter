@@ -40,7 +40,19 @@ public class PlayerMovement : MonoBehaviour
             m_rb2D.AddForce(new Vector2(m_rb2D.velocity.x, m_jump));
         }
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 3 || collision.gameObject.layer == 6 || collision.gameObject.layer == 7 || collision.gameObject.layer == 9)
+        {
+            return;
+        }
+        if (collision.gameObject.layer == 8)
+        {
+            Time.timeScale = 0;
+            SceneManager.LoadScene(2);
+        }
+    }
 
 
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6092274482007929664}
   - component: {fileID: 1489031378913252670}
   - component: {fileID: 8608383203419226885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

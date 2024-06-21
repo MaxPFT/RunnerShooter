@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         if (transform.position.y <= -20)
         {
             Time.timeScale = 0;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
     }
 
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             Time.timeScale = 0;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
     }
 

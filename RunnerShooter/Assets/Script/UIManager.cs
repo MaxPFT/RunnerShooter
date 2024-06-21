@@ -15,6 +15,29 @@ public class UIManager : MonoBehaviour
         
     }
 
+    public void ButtonForStartEasyGame()
+    {
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
+    }
+    public void ButtonForStartMediumGame()
+    {
+        SceneManager.LoadScene(2);
+        Time.timeScale = 1;
+    }
+    public void ButtonForStartHardGame()
+    {
+        SceneManager.LoadScene(3);
+        Time.timeScale = 1;
+    }
+
+
+
+
+
+
+
+
     public void ButtonForStartGame()
     {
         SceneManager.LoadScene(1);

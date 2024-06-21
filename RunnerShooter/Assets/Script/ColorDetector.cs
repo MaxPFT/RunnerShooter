@@ -8,6 +8,8 @@ public class ColorDetector : MonoBehaviour
     [SerializeField] private GameObject m_particulesEffect;
     private UIGameManager m_uiManager;
 
+    
+
 
 
     // Start is called before the first frame update
@@ -31,6 +33,7 @@ public class ColorDetector : MonoBehaviour
         var _colorIndexEnemy = collision.GetComponent<EnemyColor>().ColorIndex();
         if (color == _colorIndexEnemy)
         {
+            
             m_uiManager.m_globalScore += m_killScore;
             GameObject _particules = (GameObject)Instantiate(m_particulesEffect, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(collision.gameObject);
@@ -42,4 +45,5 @@ public class ColorDetector : MonoBehaviour
     {
         m_uiManager = _uiManager;
     }
+    
 }

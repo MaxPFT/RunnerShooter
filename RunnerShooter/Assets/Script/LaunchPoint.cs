@@ -18,6 +18,12 @@ public class LaunchPoint : MonoBehaviour
     [SerializeField] private Sprite[] m_weaponColor;
     [SerializeField] private SpriteRenderer m_spriteRenderer;
 
+    [Header("-- Sound --")]
+    public AudioClip[] Playlist;
+    public AudioSource SourceAudio;
+    private int _musicIndex;
+
+
 
 
     private Vector3 m_mousePosition; 
@@ -72,10 +78,18 @@ public class LaunchPoint : MonoBehaviour
         _projectileClone.GetComponent<SpriteRenderer>().color = m_color[m_indexProjectile];
         _projectileClone.GetComponent<ColorDetector>().color = m_indexProjectile;
         _projectileClone.GetComponent<ColorDetector>().ConnectToUiManager(m_uiManager);
+        SourceAudio.clip = Playlist[0];
+        SourceAudio.Play();
         Destroy(_projectileClone, m_time);
     }
-    
 
+    public void PlayNextNoize()
+    {
+        // Changement d'indice de lecture de la playlist
+        _musicIndex = (_musicIndex + 1) % Playlist.Length;
+        SourceAudio.clip = Playlist[_musicIndex];
+        SourceAudio.Play();
+    }
 
 
 

@@ -6,6 +6,8 @@ public class UIGameManager : MonoBehaviour
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI m_timerText;
     [SerializeField] private TextMeshProUGUI m_showScore;
+    [SerializeField] private TextMeshProUGUI m_highScore;
+
 
     [Header("Score")]
     [SerializeField] private int m_timerScore;
@@ -37,6 +39,24 @@ public class UIGameManager : MonoBehaviour
         }
 
         m_showScore.text = "Score : " + Mathf.Round(m_globalScore);
+        HighScoreUpdate();
 
+    }
+    public void HighScoreUpdate() 
+    {
+        if (PlayerPrefs.HasKey("SavedHighScore"))
+        {
+            if (m_globalScore > PlayerPrefs.GetInt("SavedHighScore"))
+            {
+                PlayerPrefs.SetInt("SavedHighScore", m_globalScore);
+            }
+            
+
+        }
+        else
+        {
+            PlayerPrefs.SetInt("SavedHighScore", m_globalScore);
+        }
+        m_highScore.text = "High Score : " + PlayerPrefs.GetInt("SavedHighScore").ToString();
     }
 }

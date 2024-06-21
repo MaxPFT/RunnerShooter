@@ -1242,7 +1242,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4485260911184789510, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_speed
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2547042159063901843, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_Name
@@ -1378,7 +1378,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4485260911184789510, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_speed
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4485260911184789510, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_timer
@@ -1724,15 +1724,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4309590520083165133, guid: f2e9d6b680f2bd64db91867d790235a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.86
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4309590520083165133, guid: f2e9d6b680f2bd64db91867d790235a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.31
+      value: 46.6
       objectReference: {fileID: 0}
     - target: {fileID: 4309590520083165133, guid: f2e9d6b680f2bd64db91867d790235a5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: 4309590520083165133, guid: f2e9d6b680f2bd64db91867d790235a5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2108,7 +2108,7 @@ MonoBehaviour:
   m_distanceBetweenNewGround: 16
   m_timer: 0
   m_maxTimer: 5
-  m_speed: 11
+  m_speed: 10
   m_addSpeed: 0.5
   m_listGameObject: []
 --- !u!50 &896289652
@@ -2208,7 +2208,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4485260911184789510, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_speed
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2547042159063901843, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_Name
@@ -2791,7 +2791,7 @@ MonoBehaviour:
   m_timer: 0
   m_minTimer: 4
   m_maxTimer: 9
-  m_speed: 20
+  m_speed: 12
   m_colorAerialEnemy:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0, g: 1, b: 0, a: 1}
@@ -3416,7 +3416,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.2
+  m_GravityScale: 1.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3977,7 +3977,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4485260911184789510, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_speed
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4485260911184789510, guid: e2c369604a830b54f84137cbbb3be673, type: 3}
       propertyPath: m_timer
@@ -4063,6 +4063,6 @@ SceneRoots:
   - {fileID: 1583409555}
   - {fileID: 1830266307}
   - {fileID: 6616860996291708330}
-  - {fileID: 697801903}
   - {fileID: 1953281857}
   - {fileID: 722600321}
+  - {fileID: 697801903}

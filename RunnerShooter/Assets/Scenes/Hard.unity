@@ -573,6 +573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2134094b9b006b84e8870b04d1b2c327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_damage: 0
+  m_heathFullOnUI: []
+  m_heathBrokenOnUI: []
 --- !u!50 &201802280
 Rigidbody2D:
   serializedVersion: 4
@@ -1778,7 +1781,7 @@ MonoBehaviour:
   m_timer: 0
   m_maxTimer: 5
   m_speed: 11
-  m_addSpeed: 0.3
+  m_addSpeed: 0.8
   m_listGameObject: []
 --- !u!50 &896289652
 Rigidbody2D:
@@ -2381,6 +2384,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 452c557adc1c6f54297598cdefbfb1db, type: 3}
   - {fileID: 21300000, guid: 452c557adc1c6f54297598cdefbfb1db, type: 3}
   - {fileID: 21300000, guid: 452c557adc1c6f54297598cdefbfb1db, type: 3}
+  m_yAxisSpawnEnemy: 0
   m_timer: 0
   m_minTimer: 4
   m_maxTimer: 9
@@ -2422,6 +2426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_timerText: {fileID: 220521478}
   m_showScore: {fileID: 32308010}
+  m_highScore: {fileID: 0}
   m_timerScore: 5
   m_globalScore: 0
 --- !u!4 &1583409555
@@ -2638,6 +2643,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f1451e3a424fba24c81ec55a50e6174a, type: 3}
   - {fileID: 21300000, guid: e50ce38a0c3e22448a3d81b61baae050, type: 3}
   m_spriteRenderer: {fileID: 2130553219}
+  Playlist: []
+  SourceAudio: {fileID: 0}
   m_uiManager: {fileID: 1583409554}
 --- !u!1 &1771738494 stripped
 GameObject:

@@ -163,11 +163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: 0
-  m_killScore: 5
+  m_killScore: 10
   m_particulesEffect: {fileID: 7395905164468411626, guid: d797682e482cf4145b1a7dd930be7b38, type: 3}
-  Playlist2:
-  - {fileID: 8300000, guid: 9ab794a14ce78af4fb1e756f453686e2, type: 3}
-  SourceAudio2: {fileID: 2752446316867614768}
 --- !u!82 &2752446316867614768
 AudioSource:
   m_ObjectHideFlags: 0

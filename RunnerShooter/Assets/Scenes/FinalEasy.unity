@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_timer: 0
   m_maxTimer: 5
   m_speed: 10
-  m_addSpeed: 0.5
+  m_addSpeed: 0.3
   m_listGameObject: []
 --- !u!50 &896289652
 Rigidbody2D:
@@ -2830,7 +2830,7 @@ MonoBehaviour:
   m_timerText: {fileID: 220521478}
   m_showScore: {fileID: 32308010}
   m_highScore: {fileID: 1626252754}
-  m_timerScore: 5
+  m_timerScore: 2
   m_globalScore: 0
 --- !u!4 &1583409555
 Transform:

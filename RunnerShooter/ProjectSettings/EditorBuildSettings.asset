@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/StartingScene.unity
     guid: 800c821e48a62014fa1760ea0028e425
   - enabled: 1
-    path: Assets/Scenes/Easy.unity
+    path: Assets/Scenes/FinalEasy.unity
     guid: 8d18fabbf4127c549913256e59746f26
+  - enabled: 1
+    path: Assets/Scenes/FinalMedium.unity
+    guid: f8a8b7ab15b846440bafba0c525496ec
+  - enabled: 1
+    path: Assets/Scenes/FinalHard.unity
+    guid: 630d49c2ee2476f4ab1647ad7be020b6
   - enabled: 1
     path: Assets/Scenes/EndingScene.unity
     guid: c45f727f68325d14e93c7dbe443fa6cf
